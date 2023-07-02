@@ -20,14 +20,14 @@ const Home: NextPage = () => {
     <CustomAppShell>
       <Text size="sm" weight={5}>
         รายละเอียดเกี่ยวกับการจัดทำโครงการเพื่อขับเคลื่อนการบรรลุเป้าหมายตามยุทธศาสตร์ชาติ
-        ประจำปี 2567 สามารถดูได้ที่
+        ประจำปี 2568 สามารถดูได้ที่
         <Text
           variant="link"
           component="a"
-          href="http://nscr.nesdc.go.th/project2567/"
+          href="http://nscr.nesdc.go.th/project2568/"
         >
           {" "}
-          http://nscr.nesdc.go.th/project2567/
+          http://nscr.nesdc.go.th/project2568/
         </Text>
       </Text>
       {/* <Divider color={'dark'} size="md"  /> */}
