@@ -75,7 +75,7 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 1"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 1"
         >
-          <Image src="q-criteria-description\criteria_68-01-description.png" alt="q1" />
+          <Image src="q-criteria-description\criteria_68-01-description.png" alt="criteria-68-01" />
         </ModalPopover>
       </Group>
       <Group noWrap>
@@ -86,14 +86,16 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           placeholder="โปรดเลือกคะแนน"
           searchable
           nothingFound="โปรดระบุคะแนน 0-5"
-          data={["0", "1", "2", "3", "4", "5"]}
+          data={["0", "0.5", "1", "1.5", "2", "2.5", "3", "3.5", "4", "4.5", "5"]}
           {...form.getInputProps("b")}
         />
         <ModalPopover
           title="เกณฑ์การให้คะแนน ข้อที่ 2"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 2"
         >
-          <Image src="q-criteria-description\criteria_68-02-description-1.png" alt="q2" />
+          <Image src="q-criteria-description\criteria_68-02-description-1.png" alt="criteria-68-02-01" />
+        
+          <Image src="q-criteria-description\criteria_68-02-description-2.png" alt="criteria-68-02-02" />
         </ModalPopover>
       </Group>
 
@@ -112,7 +114,9 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 3"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 3"
         >
-          <Image src="q-criteria-description\q3-description.png" alt="q3" />
+          <Image src="q-criteria-description\criteria_68-03-description-1.png" alt="criteria-68-03-01" />
+          <Image src="q-criteria-description\criteria_68-03-description-2.png" alt="criteria-68-03-02" />
+          
         </ModalPopover>
       </Group>
       <Group noWrap>
@@ -131,7 +135,8 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 4"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 4"
         >
-          <Image src="q-criteria-description\q4-description.png" alt="q4" />
+          <Image src="q-criteria-description\criteria_68-04-description-1.png" alt="criteria-68-04-01" />
+          <Image src="q-criteria-description\criteria_68-04-description-2.png" alt="criteria-68-04-02" />
         </ModalPopover>
       </Group>
       <Group noWrap>
@@ -149,7 +154,9 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 5"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 5"
         >
-          <Image src="q-criteria-description\q5-description.png" alt="q5" />
+          <Image src="q-criteria-description\criteria_68-05-description-1.png" alt="criteria-68-05-01" />
+          <Image src="q-criteria-description\criteria_68-05-description-2.png" alt="criteria-68-05-02" />
+          
         </ModalPopover>
       </Group>
       <Group noWrap>
@@ -167,7 +174,8 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 6"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 6"
         >
-          <Image src="q-criteria-description\q6-description.png" alt="q6" />
+          <Image src="q-criteria-description\criteria_68-06-description-1.png" alt="criteria-68-06-01" />
+          <Image src="q-criteria-description\criteria_68-06-description-2.png" alt="criteria-68-06-02" />
         </ModalPopover>
       </Group>
       <Group noWrap>
@@ -178,15 +186,15 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           placeholder="โปรดเลือกคะแนน"
           searchable
           nothingFound="โปรดระบุคะแนน 0-5"
-          data={["0", "1", "2", "3", "4", "5"]}
+          data={["0", "0.25", "0.50", "0.75", "1", "1.25", "1.50", "1.75", "2", "2.25", "2.50", "2.75", "3", "3.25", "3.50", "3.75", "4", "4.25", "4.50", "4.75", "5"]}
           {...form.getInputProps("g")}
         />
         <ModalPopover
           title="เกณฑ์การให้คะแนน ข้อที่ 7"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 7"
         >
-          <Image src="q-criteria-description\q7-1-description.png" alt="q7-1" />
-          <Image src="q-criteria-description\q7-2-description.png" alt="q7-2" />
+          <Image src="q-criteria-description\criteria_68-07-description-1.png" alt="criteria-68-07" />
+
         </ModalPopover>
       </Group>
       <Group position="center" mt="md">
