@@ -75,7 +75,7 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 1"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 1"
         >
-          <Image src="q-criteria-description\q1-description.png" alt="q1" />
+          <Image src="q-criteria-description\criteria_68-01-description.png" alt="q1" />
         </ModalPopover>
       </Group>
       <Group noWrap>
@@ -93,7 +93,7 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 2"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 2"
         >
-          <Image src="q-criteria-description\q2-description.png" alt="q2" />
+          <Image src="q-criteria-description\criteria_68-02-description-1.png" alt="q2" />
         </ModalPopover>
       </Group>
 
