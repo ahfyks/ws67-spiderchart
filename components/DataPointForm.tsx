@@ -85,8 +85,8 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           label="2.ความจำเป็นต้องมีโครงการ"
           placeholder="โปรดเลือกคะแนน"
           searchable
-          nothingFound="โปรดระบุคะแนน 0-5"
-          data={["0", "0.5", "1", "1.5", "2", "2.5", "3", "3.5", "4", "4.5", "5"]}
+          nothingFound="โปรดระบุคะแนน 1-5"
+          data={["1", "1.5", "2", "2.5", "3", "3.5", "4", "4.5", "5"]}
           {...form.getInputProps("b")}
         />
         <ModalPopover
