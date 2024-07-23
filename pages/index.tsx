@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 
   return (
     <CustomAppShell>
-      {<Text size="sm" weight={5}>
+      <Text size="sm" weight={5}>
         รายละเอียดเกี่ยวกับการจัดทำโครงการเพื่อขับเคลื่อนการบรรลุเป้าหมายตามยุทธศาสตร์ชาติ
         ประจำปี 2568 สามารถดูได้ที่
         <Text
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                 </Text>
                 <Text align="center" weight={700}>{multiplyWeight(formValues)}/100</Text>
                 
-              </>}
+              </>
               {/* <Text align="center">Some text <Text color="red" inherit component="span">Highlighted</Text> Some Text</Text>; */}
             </Box>
           </Box>
