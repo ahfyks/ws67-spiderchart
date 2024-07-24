@@ -147,7 +147,6 @@ const IndexPage: NextPage = () => {
 export default IndexPage;
 */
 
-import { Header, Image } from '@mantine/core';
 import styled, { keyframes } from 'styled-components';
 //import nesdcLogo from 'public/Footer-NESDC.png'; // Adjust the path as necessary
 

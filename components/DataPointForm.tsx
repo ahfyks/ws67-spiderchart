@@ -60,14 +60,14 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
 
   return (
     <form onSubmit={form.onSubmit(handleFormSubmit)}>
-      <Group noWrap>
+      <Group>
         <Select
           style={{ width: "100%" }}
           required
           label="1. โครงการสอดคล้องกับปัจจัยและองค์ประกอบของห่วงโซ่คุณค่าของเป้าหมายแผนแม่บทย่อย (Y1) ที่เลือกมา และโครงการสามารถส่งผลต่อการบรรลุเป้าหมายแผนแม่บทย่อย (Y1) และยุทธศาสตร์ชาติตามหลักการ XYZ (ระบุได้เฉพาะเลข 1 หรือ 0)"
           placeholder="โปรดเลือกคะแนน"
           searchable
-          nothingFound="โปรดระบุคะแนน 0-1"
+          nothingFoundMessage="โปรดระบุคะแนน 0-1"
           data={["0", "1"]}
           {...form.getInputProps("a")}
         />
@@ -78,14 +78,14 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           <Image src="q-criteria-description\criteria_68-01-description.png" alt="criteria-68-01" />
         </ModalPopover>
       </Group>
-      <Group noWrap>
+      <Group>
         <Select
           style={{ width: "100%" }}
           required
           label="2.ความจำเป็นต้องมีโครงการ"
           placeholder="โปรดเลือกคะแนน"
           searchable
-          nothingFound="โปรดระบุคะแนน 1-5"
+          nothingFoundMessage="โปรดระบุคะแนน 1-5"
           data={["1", "1.5", "2", "2.5", "3", "3.5", "4", "4.5", "5"]}
           {...form.getInputProps("b")}
         />
@@ -99,14 +99,14 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
         </ModalPopover>
       </Group>
 
-      <Group noWrap>
+      <Group>
         <Select
           style={{ width: "100%" }}
           required
           label="3. โครงการเป็นการจัดทำบนฐานข้อมูลเชิงประจักษ์ (ไม่ใช่การกล่าวอ้าง)"
           placeholder="โปรดเลือกคะแนน"
           searchable
-          nothingFound="โปรดระบุคะแนน 0-5"
+          nothingFoundMessage="โปรดระบุคะแนน 0-5"
           data={["0", "1", "2", "3", "4", "5"]}
           {...form.getInputProps("c")}
         />
@@ -119,14 +119,14 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           
         </ModalPopover>
       </Group>
-      <Group noWrap>
+      <Group>
         <Select
           style={{ width: "100%" }}
           required
           label="4. โครงการมีวัตถุประสงค์ ผลผลิตผลลัพธ์ และ กลุ่มเป้าหมายผู้รับประโยชน์ ที่ชัดเจน สามารถส่งผลต่อการบรรลุเป้าหมายของโครงการอย่างเป็นรูปธรรม"
           placeholder="โปรดเลือกคะแนน"
           searchable
-          nothingFound="โปรดระบุคะแนน 0-5"
+          nothingFoundMessage="โปรดระบุคะแนน 0-5"
           data={["0", "1", "2", "3", "4", "5"]}
           {...form.getInputProps("d")}
         />
@@ -138,14 +138,14 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           <Image src="q-criteria-description\criteria_68-04-description-2.png" alt="criteria-68-04-02" />
         </ModalPopover>
       </Group>
-      <Group noWrap>
+      <Group>
         <Select
           style={{ width: "100%" }}
           required
           label="5. โครงการมีรายละเอียดแผนการดำเนินงานและกิจกรรมที่ ชัดเจน เป็นไปได้จริง และ ส่งผลโดยตรง ต่อการบรรลุเป้าหมายและวัตถุประสงค์ของโครงการอย่างแท้จริง"
           placeholder="โปรดเลือกคะแนน"
           searchable
-          nothingFound="โปรดระบุคะแนน 0-5"
+          nothingFoundMessage="โปรดระบุคะแนน 0-5"
           data={["0", "1", "2", "3", "4", "5"]}
           {...form.getInputProps("e")}
         />
@@ -158,14 +158,14 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           
         </ModalPopover>
       </Group>
-      <Group noWrap>
+      <Group>
         <Select
           style={{ width: "100%" }}
           required
           label="6. โครงการมีตัวชี้วัดที่สามารถชี้และวัดความสำเร็จของเป้าหมายโครงการได้อย่างเป็นรูปธรรม"
           placeholder="โปรดเลือกคะแนน"
           searchable
-          nothingFound="โปรดระบุคะแนน 0-5"
+          nothingFoundMessage="โปรดระบุคะแนน 0-5"
           data={["0", "1", "2", "3", "4", "5"]}
           {...form.getInputProps("f")}
         />
@@ -177,14 +177,14 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           <Image src="q-criteria-description\criteria_68-06-description-2.png" alt="criteria-68-06-02" />
         </ModalPopover>
       </Group>
-      <Group noWrap>
+      <Group>
         <Select
           style={{ width: "100%" }}
           required
           label="7. โครงการไม่เป็นการจัดตั้งกองทุนและคณะกรรมการ/การจัดตั้งหน่วยงาน/การปรับปรุง ซ่อมแซม ก่อสร้างอาคารสำนักงาน/การจัดซื้อครุภัณฑ์ หากเป็นต้องส่งผลต่อการบรรลุเป้าหมายแผนแม่บทย่อย (Y1) ที่เกี่ยวข้องอย่างชัดเจน"
           placeholder="โปรดเลือกคะแนน"
           searchable
-          nothingFound="โปรดระบุคะแนน 0-5"
+          nothingFoundMessage="โปรดระบุคะแนน 0-5"
           data={["0", "0.25", "0.50", "0.75", "1", "1.25", "1.50", "1.75", "2", "2.25", "2.50", "2.75", "3", "3.25", "3.50", "3.75", "4", "4.25", "4.50", "4.75", "5"]}
           {...form.getInputProps("g")}
         />
@@ -196,7 +196,7 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
 
         </ModalPopover>
       </Group>
-      <Group position="center" mt="md">
+      <Group justify="center" mt="md">
         <Button type="submit">แสดงผลคะแนน</Button>
       </Group>
     </form>
