@@ -170,7 +170,6 @@ const StyledContainer = styled.div`
   background-color: #1a1a1a;
   color: white;
   text-align: center;
-  padding: 20px;
 `;
 
 const UnderConstructionText = styled.div`
