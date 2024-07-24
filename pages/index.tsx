@@ -194,10 +194,14 @@ const IndexPage: NextPage = () => {
         <UnderConstructionText>อยู่ระหว่างดำเนินการ</UnderConstructionText>
         <InfoContainer>
           <div>อยู่ระหว่างการปรับเงื่อนไขของหลักเกณฑ์การประเมินโครงการเพื่อขับเคลื่อนการบรรลุเป้าหมายตามยุทธศาสตร์ชาติ ประจำปีงบประมาณ พ.ศ. 2569</div>
+          <div>
+            รายละเอียดเพิ่มเติมเกี่ยวกับโครงการเพื่อขับเคลื่อนฯ
+            <Link href="http://nscr.nesdc.go.th/project2569/">http://nscr.nesdc.go.th/project2569/</Link>
+          </div>
           <div>หากมีข้อสงสัยเพิ่มเติม โปรดติดต่อที่</div>
           <div>
-            <Link href="mailto:nscr@nesdc.go.th">nscr@nesdc.go.th</Link> |
             <Link href="https://line.me/ti/p/@nscr" target="_blank"> LINE Official ยุทธศาสตร์ชาติ</Link> |
+            <Link href="mailto:nscr@nesdc.go.th">nscr@nesdc.go.th</Link> |
             โทร 0-2280-4085 ต่อ 6226, 6225, 6233, 6234
           </div>
         </InfoContainer>
