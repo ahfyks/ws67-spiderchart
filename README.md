@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## About
-This project created for NESDC Idea Project Worskhop 2022.
+This project created for NESDC Idea Project Worskhop 2022-2024
 Handle with care
 
 ## Getting Started
