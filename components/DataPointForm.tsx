@@ -147,7 +147,7 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           placeholder="โปรดเลือกคะแนน"
           searchable
           nothingFoundMessage="โปรดระบุคะแนน 0-5"
-          data={["0", "1"]}
+          data={["0", "1.67", "3.34", "5"]}
           {...form.getInputProps("e")}
         />
         <ModalPopover
