@@ -49,7 +49,9 @@ const Home: NextPage = () => {
           <DataPointForm handleFormSubmit={handleFormSubmit} />
         </Box>
         <Box style={{ flex: 1, padding: theme.spacing.md }}>
-          <CustomRadarChart data={formValues} />
+          <div style={{ width: '100%', height: '100%', maxWidth: '600px', margin: '0 auto' }}>
+           <CustomRadarChart data={formValues} />
+          </div>
           <Text style={{textAlign:'center'}} fw={500}>
             ผลคะแนนของโครงการ {" "}
           </Text>
