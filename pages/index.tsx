@@ -50,10 +50,10 @@ const Home: NextPage = () => {
         </Box>
         <Box style={{ flex: 1, padding: theme.spacing.md }}>
           <CustomRadarChart data={formValues} />
-          <Text style={{textAlign:'center'}} weight={500}>
+          <Text style={{textAlign:'center'}} fw={500}>
             ผลคะแนนของโครงการ {" "}
           </Text>
-          <Text style={{textAlign:'center'}} weight={700}>{multiplyWeight(formValues)}
+          <Text style={{textAlign:'center'}} fw={700}>{multiplyWeight(formValues)}
             /100
           </Text>
         </Box>
