@@ -15,6 +15,7 @@ import { multiplyWeight } from "../components/SumData";
 const Home: NextPage = () => {
   const [formValues, setFormValues] = useState<number[]>([]);
   const handleFormSubmit = (values: DataPointFormValues) => {
+    //console.log(values);
     setFormValues(Object.values(values));
   };
   const theme = useMantineTheme();

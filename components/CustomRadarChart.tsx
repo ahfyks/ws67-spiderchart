@@ -26,20 +26,12 @@ type Props = {
   data: number[];
 };
 
-const transformData = (data: number[]) => {
-  const output = data.map((inputVal, i) => {
-    return i == 0 ? inputVal * 5 : inputVal
-  });
-  return output;
-};
-
-
 const setChartData = (data: number[], colorScheme: string) => ({
   labels: ["1", "2", "3", "4", "5", "6", "7"],
   datasets: [
     {
       label: "คะแนน",
-      data: transformData(data),
+      data: data,
       fill: true,
       backgroundColor: colorScheme === "dark" ? "rgba(255, 99, 132, 0.2)" : "rgba(255, 159, 64, 0.2)",
       borderColor: colorScheme === "dark" ? "rgb(255, 99, 132)" : "rgb(255, 159, 64)",
@@ -113,7 +105,17 @@ const setChartOptions = (colorScheme: string) => ({
 
 const CustomRadarChart = ({ data }: Props) => {
   const { colorScheme } = useMantineColorScheme();
-  return <Radar data={setChartData(data, colorScheme)} options={setChartOptions(colorScheme)} />;
+
+  let newData = [
+    Number(data[0]),
+    Number(data[1]),
+    Number(data[2]),
+    Number(data[3]),
+    Number(data[4]) * (5/3 * (Number(data[5]) + Number(data[6]) + Number(data[7]))),
+    Number(data[8]),
+    Number(data[9])
+  ];
+  return <Radar data={setChartData(newData, colorScheme)} options={setChartOptions(colorScheme)} />;
 }
 
 export default CustomRadarChart;

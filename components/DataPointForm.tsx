@@ -8,6 +8,7 @@ import {
   Modal,
   Stack,
   Text,
+  useMantineTheme,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { useState } from "react";
@@ -22,43 +23,47 @@ type Props = {
 const DataPointForm = ({ handleFormSubmit }: Props) => {
   const form = useForm({
     initialValues: {
-      a: 0,
-      b: 0,
-      c: 0,
-      d: 0,
-      e: 0,
-      f: 0,
-      g: 0,
+      a: 0, //q1
+      b: 0, //q2
+      c: 0, //q3
+      d: 0, //q4
+      e: 0, //q5.1
+      f: 0, //q5.2
+      g: 0, //q5.3
+      h: 0, //q5.4
+      // i: 0, //q5
+      j: 0, //q6
+      k: 0, //q7
     },
     validate: {
       a: (value) =>
-        value == 1 || value == 0 ? null : "ระบุได้เฉพาะเลข 1 หรือ 0",
+        value == 1 || value == 0 ? null : "ระบุได้เฉพาะเลข 1 หรือ 0", //q1
       b: (value) =>
-        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5",
+        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5", //q2
       c: (value) =>
-        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5",
+        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5", //q3
       d: (value) =>
-        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5",
+        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5", //q4
       e: (value) =>
-        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5",
+        value == 1 || value == 0 ? null : "ระบุได้เฉพาะเลข 0 หรือ 1", //q5.1
       f: (value) =>
-        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5",
+        value == 1 || value == 0 ? null : "ระบุได้เฉพาะเลข 0 หรือ 1", //q5.2
       g: (value) =>
-        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5",
-    },
-    // inputWeight:{
-    //   a:(value) == value*2,
-    //   b:(value) == value*2,
-    //   c:(value) == value*2,
-    //   d:(value) == value*2,
-    //   e:(value) == value*2,
-    //   f:(value) == value*2,
-    //   g:(value) == value*2,
-    // },
+        value == 1 || value == 0 ? null : "ระบุได้เฉพาะเลข 0 หรือ 1", //q5.3
+      h: (value) =>
+        value == 1 || value == 0 ? null : "ระบุได้เฉพาะเลข 0 หรือ 1", //q5.4
+      // i: (value) =>
+      // value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5", //q5
+      j: (value) =>
+        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5", //q6
+      k: (value) =>
+        value >= 0 && value <= 5 ? null : "ระบุได้เฉพาะเลข 0 ถึง 5", //q7
 
+    },
   });
 
   const selectStyle = { flexGrow: 1, flexShrink: 1, flexBasis: 0 };
+  const theme = useMantineTheme();
 
   return (
     <form onSubmit={form.onSubmit(handleFormSubmit)}>
@@ -139,25 +144,69 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           <Image src="q-criteria-description\pj2569-4-2.png" alt="criteria-69-4-2" />
         </ModalPopover>
       </Group>
-      <Group>
-        <Select
-          style={selectStyle}
-          required
-          label="5. โครงการมีรายละเอียดแผนการดำเนินงานและกิจกรรมที่ชัดเจน เป็นไปได้จริง และ ส่งผลโดยตรงต่อการบรรลุเป้าหมายและวัตถุประสงค์ของโครงการอย่างแท้จริง"
-          placeholder="โปรดเลือกคะแนน"
-          searchable
-          nothingFoundMessage="โปรดระบุคะแนน 0-5"
-          data={["0", "1.67", "3.34", "5"]}
-          {...form.getInputProps("e")}
-        />
-        <ModalPopover
-          title="เกณฑ์การให้คะแนน ข้อที่ 5"
-          buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 5"
-        >
-          <Image src="q-criteria-description\pj2569-5.png" alt="criteria-69-5-1" />
-          <Image src="q-criteria-description\pj2569-5-2.png" alt="criteria-69-5-2" />
-          
-        </ModalPopover>
+      <Group style={{ width: '100%', marginBottom: '15px', alignItems: 'flex-start' }}>
+        <div style={{ flex: 1 }}>
+          <label style={{ fontSize: '16px', fontWeight: 'normal', display: 'block', marginBottom: '10px', width: '100%' }}>
+            5. โครงการมีรายละเอียดแผนการดำเนินงานและกิจกรรมที่ชัดเจน เป็นไปได้จริง และ ส่งผลโดยตรงต่อการบรรลุเป้าหมายและวัตถุประสงค์ของโครงการอย่างแท้จริง
+          </label>
+          <Group pl="md" style={{ width: '100%', marginBottom: '15px' }}>
+            <Select
+              style={{ ...selectStyle, flex: 1 }}
+              required
+              label="5.1 มีการระบุกิจกรรม (ไม่ระบุ/ระบุ)"
+              placeholder="โปรดเลือกคะแนน"
+              searchable
+              nothingFoundMessage="โปรดระบุคะแนน 0 หรือ 1"
+              data={["0", "1"]}
+              {...form.getInputProps("e")}
+            />
+          </Group>
+          <Group pl="md" style={{ width: '100%', marginBottom: '15px' }}>
+            <Select
+              style={{ ...selectStyle, flex: 1 }}
+              required
+              label="5.2 ความชัดเจนของรายละเอียดของกิจกรรม (ไม่ชัดเจน/ชัดเจน)"
+              placeholder="โปรดเลือกคะแนน"
+              searchable
+              nothingFoundMessage="โปรดระบุคะแนน 0 หรือ 1"
+              data={["0", "1"]}
+              {...form.getInputProps("f")}
+            />
+          </Group>
+          <Group pl="md" style={{ width: '100%', marginBottom: '15px' }}>
+            <Select
+              style={{ ...selectStyle, flex: 1 }}
+              required
+              label="5.3 ความถูกต้องของการจัดลำดับกิจกรรม (ไม่ถูกต้อง/ถูกต้อง)"
+              placeholder="โปรดเลือกคะแนน"
+              searchable
+              nothingFoundMessage="โปรดระบุคะแนน 0 หรือ 1"
+              data={["0", "1"]}
+              {...form.getInputProps("g")}
+            />
+          </Group>
+          <Group pl="md" style={{ width: '100%', marginBottom: '15px' }}>
+            <Select
+              style={{ ...selectStyle, flex: 1 }}
+              required
+              label="5.4 ความเป็นไปได้จริงของกิจกรรมในการส่งผลต่อการบรรลุเป้าหมายของโครงการ (ผลผลิตและผลลัพธ์ของโครงการ) (เป็นไปไม่ได้/เป็นไปได้)"
+              placeholder="โปรดเลือกคะแนน"
+              searchable
+              nothingFoundMessage="โปรดระบุคะแนน 0 หรือ 1"
+              data={["0", "1"]}
+              {...form.getInputProps("h")}
+            />
+          </Group>
+        </div>
+        <div style={{ marginLeft: '20px', alignSelf: 'center' }}>
+          <ModalPopover
+            title="เกณฑ์การให้คะแนน ข้อที่ 5"
+            buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 5"
+          >
+            <Image src="q-criteria-description\pj2569-5.png" alt="criteria-69-5-1" />
+            <Image src="q-criteria-description\pj2569-5-2.png" alt="criteria-69-5-2" />
+          </ModalPopover>
+        </div>
       </Group>
       <Group>
         <Select
@@ -168,7 +217,7 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           searchable
           nothingFoundMessage="โปรดระบุคะแนน 0-5"
           data={["0", "1", "2", "3", "4", "5"]}
-          {...form.getInputProps("f")}
+          {...form.getInputProps("j")}
         />
         <ModalPopover
           title="เกณฑ์การให้คะแนน ข้อที่ 6"
@@ -187,7 +236,7 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           searchable
           nothingFoundMessage="โปรดระบุคะแนน 0-5"
           data={["0", "0.25", "0.50", "0.75", "1", "1.25", "1.50", "1.75", "2", "2.25", "2.50", "2.75", "3", "3.25", "3.50", "3.75", "4", "4.25", "4.50", "4.75", "5"]}
-          {...form.getInputProps("g")}
+          {...form.getInputProps("k")}
         />
         <ModalPopover
           title="เกณฑ์การให้คะแนน ข้อที่ 7"
