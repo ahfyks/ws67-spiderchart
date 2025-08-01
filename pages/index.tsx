@@ -24,7 +24,7 @@ const Home: NextPage = () => {
     <CustomAppShell>
       <Text size="sm" fw={5}>
         รายละเอียดเกี่ยวกับการจัดทำโครงการเพื่อขับเคลื่อนการบรรลุเป้าหมายตามยุทธศาสตร์ชาติ
-        ประจำปีงบประมาณ พ.ศ. 2569 สามารถดูได้ที่
+        ประจำปีงบประมาณ พ.ศ. 2570 สามารถดูได้ที่
         <Text
           variant="link"
           component="a"
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           style={{ textDecoration: 'underline', color: theme.colors.blue[5] }}
         >
           {" "}
-          http://nscr.nesdc.go.th/project2569/
+          https://www.nesdc.go.th/nscr/project70/
         </Text>
       </Text>
       <div
