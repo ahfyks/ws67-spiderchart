@@ -82,8 +82,8 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 1"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 1"
         >
-          <Image src="q-criteria-description\pj2569-1.png" alt="criteria-69-1" />
-          <Image src="q-criteria-description\pj2569-1-2.png" alt="criteria-69-1-2" />
+          <Image src="q-criteria-description\pj2570-1.png" alt="criteria-70-1" />
+          <Image src="q-criteria-description\pj2570-1-2.png" alt="criteria-70-1-2" />
         </ModalPopover>
       </Group>
       <Group>
@@ -101,7 +101,7 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 2"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 2"
         >
-          <Image src="q-criteria-description\pj2569-2.png" alt="criteria-69-2" />
+          <Image src="q-criteria-description\pj2570-2.png" alt="criteria-70-2" />
         </ModalPopover>
       </Group>
 
@@ -120,8 +120,8 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 3"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 3"
         >
-          <Image src="q-criteria-description\pj2569-3.png" alt="criteria-69-3-1" />
-          <Image src="q-criteria-description\pj2569-3-2.png" alt="criteria-69-3-2" />
+          <Image src="q-criteria-description\pj2570-3.png" alt="criteria-70-3-1" />
+          <Image src="q-criteria-description\pj2570-3-2.png" alt="criteria-70-3-2" />
           
         </ModalPopover>
       </Group>
@@ -140,8 +140,8 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 4"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 4"
         >
-          <Image src="q-criteria-description\pj2569-4.png" alt="criteria-69-4-1" />
-          <Image src="q-criteria-description\pj2569-4-2.png" alt="criteria-69-4-2" />
+          <Image src="q-criteria-description\pj2570-4.png" alt="criteria-70-4-1" />
+          <Image src="q-criteria-description\pj2570-4-2.png" alt="criteria-70-4-2" />
         </ModalPopover>
       </Group>
       <Group style={{ width: '100%', marginBottom: '15px', alignItems: 'flex-start' }}>
@@ -203,8 +203,8 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
             title="เกณฑ์การให้คะแนน ข้อที่ 5"
             buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 5"
           >
-            <Image src="q-criteria-description\pj2569-5.png" alt="criteria-69-5-1" />
-            <Image src="q-criteria-description\pj2569-5-2.png" alt="criteria-69-5-2" />
+            <Image src="q-criteria-description\pj2570-5.png" alt="criteria-70-5-1" />
+            <Image src="q-criteria-description\pj2570-5-2.png" alt="criteria-70-5-2" />
           </ModalPopover>
         </div>
       </Group>
@@ -223,8 +223,8 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 6"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 6"
         >
-          <Image src="q-criteria-description\pj2569-6.png" alt="criteria-69-6-1" />
-          <Image src="q-criteria-description\pj2569-6-2.png" alt="criteria-69-6-2" />
+          <Image src="q-criteria-description\pj2570-6.png" alt="criteria-70-6-1" />
+          <Image src="q-criteria-description\pj2570-6-2.png" alt="criteria-70-6-2" />
         </ModalPopover>
       </Group>
       <Group>
@@ -242,7 +242,7 @@ const DataPointForm = ({ handleFormSubmit }: Props) => {
           title="เกณฑ์การให้คะแนน ข้อที่ 7"
           buttonLabel="รายละเอียดเกณฑ์การให้คะแนน ข้อที่ 7"
         >
-          <Image src="q-criteria-description\pj2569-7.png" alt="criteria-69-7-1" />
+          <Image src="q-criteria-description\pj2570-7.png" alt="criteria-70-7-1" />
         </ModalPopover>
       </Group>
       <Group justify="center" mt="md">
