@@ -42,7 +42,7 @@ const CustomAppShell = ({ children }: Props) => {
         <Flex align="center" style={{ height: "100%" }}>
           <Image width={80} height={80} src='nesdc-logo.png' />
           <Text fw={700}>
-            Spider Chart หลักเกณฑ์การประเมินโครงการ เพื่อขับเคลื่อนการบรรลุเป้าหมายตามยุทธศาสตร์ชาติ ประจำปีงบประมาณ พ.ศ. 2569
+            Spider Chart หลักเกณฑ์การประเมินโครงการ เพื่อขับเคลื่อนการบรรลุเป้าหมายตามยุทธศาสตร์ชาติ ประจำปีงบประมาณ พ.ศ. 2570
           </Text>
         </Flex>
         <Button 
