@@ -10,7 +10,7 @@ export const multiplyWeight = (data: number[]) => {
         let TempData = [...data];
         TempData.shift()
         let test = TempData.reduce((acc, i) =>  acc + Number(i) , 0)
-        output.push((test*(100/30)))
+        output.push((test*(100/29)))
         return output ;
     }
     
